@@ -2,7 +2,12 @@
 
 Experimental Void Linux package templates for all 17 Abyss repositories.
 These are third-party development snapshots, not packages accepted into Void's
-official repository. Remaining package builds are still being validated.
+official repository. All 17 pinned primary packages built successfully on
+x86_64/glibc with xbps-src in an isolated buildroot (2026-10-17). See
+`BUILD-RESULTS.json` for the exact artifact hashes. The seven libraries also
+produce development subpackages. Installation and live desktop tests, other
+architectures, musl, signing and public binary hosting remain pending.
+Project test suites were disabled for this packaging build.
 
 `sources.json` pins the public archives and their hashes. `catalog.json` records
 dependencies and package names. The seven libraries have separate `-devel`

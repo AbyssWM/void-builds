@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-17",
+  "architecture": "x86_64",
+  "libc": "glibc",
+  "method": "official void-packages xbps-src with bwrap, private root, two jobs",
+  "primary_packages": [
+    {
+      "repository": "Abyssutils",
+      "package": "abyssutils",
+      "filename": "abyssutils-0.14.2.20261017_1.x86_64.xbps",
+      "sha256": "d883152bb2dc8a82ba815933bc9ebd5a40edda95a52435833f36ab8b913329a5",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyss-scanner",
+      "package": "abyss-scanner",
+      "filename": "abyss-scanner-0.4.5.20261017_1.x86_64.xbps",
+      "sha256": "3eaa7747876d911b89e08b6b68bca4ae42237603c76e379a479d6961d98a07d6",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyssland-protocols",
+      "package": "abyssland-protocols",
+      "filename": "abyssland-protocols-0.7.0.20261017_1.x86_64.xbps",
+      "sha256": "38acfb432f0103b113b342180b5e5484e5a191fd14d4bf3eb802a6cb0b70113c",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyssparse",
+      "package": "abyssparse",
+      "filename": "abyssparse-0.6.8.20261017_1.x86_64.xbps",
+      "sha256": "a9c6bfcd3e812d7b54a5b34dec243887978eb7f9f28f580a727eab5980bca693",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abysswire",
+      "package": "abysswire",
+      "filename": "abysswire-0.3.1.20261017_1.x86_64.xbps",
+      "sha256": "2de370c06f4acac26f8dcebe171af0136b3d708eb4d129222a166a2336b993c9",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyssgraphics",
+      "package": "abyssgraphics",
+      "filename": "abyssgraphics-0.5.1.20261017_1.x86_64.xbps",
+      "sha256": "0051836fdabd594a8ff8a8e2b55ac96500ca59901f538b95756b25f5b05483c0",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyssal",
+      "package": "abyssal",
+      "filename": "abyssal-0.15.0.20261017_1.x86_64.xbps",
+      "sha256": "f5fb5cda2c6099509367c9a9defa19a266dd8182e4919127227de3345d43cbb4",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abysstoolkit",
+      "package": "abysstoolkit",
+      "filename": "abysstoolkit-0.6.0.20261017_1.x86_64.xbps",
+      "sha256": "47cf7cefbef8740a109f33096b8ddf5e0e71404280f4aa17cc5ecd5c2397f569",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abysscursor",
+      "package": "abysscursor",
+      "filename": "abysscursor-0.1.13.20261017_1.x86_64.xbps",
+      "sha256": "8e138e69ed531eda9c6ec76abd60316e166bebed7049fb4068733beb506a3b0b",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyssland",
+      "package": "abyssland",
+      "filename": "abyssland-0.56.2.20261017_1.x86_64.xbps",
+      "sha256": "4d65b6bd81867a75e67f7401c727aace1459f3e80f95c8a18609a68f7897e0d4",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Abyss-guiutils",
+      "package": "abyss-guiutils",
+      "filename": "abyss-guiutils-0.2.2.20261017_1.x86_64.xbps",
+      "sha256": "03f83490351848bbb6320c19c43029c624314f2732332151eec279e2b1321fb8",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "Xdg-desktop-portal-abyss",
+      "package": "xdg-desktop-portal-abyss",
+      "filename": "xdg-desktop-portal-abyss-1.4.1.20261017_1.x86_64.xbps",
+      "sha256": "626afa31435ed2728bab3de6a3326ee5adb7a4ba3a29e70854395541bf43a22c",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "AbyssPicker",
+      "package": "abysspicker",
+      "filename": "abysspicker-0.4.7.20261017_1.x86_64.xbps",
+      "sha256": "55c7cb02c835d262e799de1eead465c4e6c3ce335f6f6fc608e9974af7627a88",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "AbyssDusk",
+      "package": "abyssdusk",
+      "filename": "abyssdusk-0.4.0.20261017_1.x86_64.xbps",
+      "sha256": "174bd4f39b8b92634015f48eb7b5656f35c5e39002e62c0a552e56b1693dfdc1",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "AbyssPaper",
+      "package": "abysspaper",
+      "filename": "abysspaper-0.8.4.20261017_1.x86_64.xbps",
+      "sha256": "a7264a436ad11b7f175407fe61c6bcf0ff2dc2cb58fb4ea4b41be89366360126",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "AbyssLock",
+      "package": "abysslock",
+      "filename": "abysslock-0.9.6.20261017_1.x86_64.xbps",
+      "sha256": "9d45b57da1d88a0b34e5713ed65bb5673ed1862231582a310137ce6952cb0c81",
+      "native_build": "passed",
+      "installation_test": "pending"
+    },
+    {
+      "repository": "AbyssPolkit",
+      "package": "abysspolkit",
+      "filename": "abysspolkit-0.2.0.20261017_1.x86_64.xbps",
+      "sha256": "e8aa132302366d09b43d385d4e141cee3e0cd30b31d5a240089d2567ca610f19",
+      "native_build": "passed",
+      "installation_test": "pending"
+    }
+  ],
+  "tests_enabled": false,
+  "signed_repository": false,
+  "source_pins": "sources.json",
+  "runtime_desktop_test": "pending"
+}
