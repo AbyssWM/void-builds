@@ -37,7 +37,7 @@ def void(package, catalog, sources):
 # Pinned development snapshot; not an upstream release.
 pkgname={name}
 version={version}
-revision=1
+revision={package.get("revision", 1)}
 _commit={package["commit"]}
 wrksrc="{package["repo"]}-${{_commit}}"
 build_style={package["build_system"]}
@@ -67,6 +67,8 @@ checksum={package["sha256"]}
         directory.joinpath("patches").mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / "patches" / name / patch, directory / "patches" / patch)
     text += '\npost_install() {\n\tvlicense LICENSE\n'
+    if name == "abyssparse":
+        text += '\tvlicense COPYING\n\tvlicense COPYRIGHT\n'
     if name == "abyssland":
         text += '\tvlicense "${wrksrc}/glaze-7.2.0/LICENSE" glaze-LICENSE\n'
     text += '}\n'

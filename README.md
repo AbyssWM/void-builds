@@ -41,3 +41,5 @@ Maintainer: bb8TheRobot <bb8therobot85@gmail.com>.
 Packaging code: 0BSD. Upstream licenses and notices remain applicable, including
 Abyssparse's LGPL-3.0-only. The upstream attribution audit remains a separate
 release prerequisite.
+
+License scope and the retained upstream notices are described in [LICENSES.md](LICENSES.md).

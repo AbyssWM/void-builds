@@ -254,7 +254,8 @@
       ],
       "build_internal": [],
       "library": true,
-      "soname": 2
+      "soname": 2,
+      "revision": 2
     },
     "Abysswire": {
       "name": "abysswire",

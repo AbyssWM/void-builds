@@ -31,10 +31,15 @@
     {
       "repository": "Abyssparse",
       "package": "abyssparse",
-      "filename": "abyssparse-0.6.8.20261017_1.x86_64.xbps",
-      "sha256": "a9c6bfcd3e812d7b54a5b34dec243887978eb7f9f28f580a727eab5980bca693",
+      "filename": "abyssparse-0.6.8.20261017_2.x86_64.xbps",
+      "sha256": "27e0265b56d40722e017b2468d2047bb858ca23829a032fffdd9a5c1d661f17b",
       "native_build": "passed",
-      "installation_test": "pending"
+      "installation_test": "pending",
+      "license_files_verified": [
+        "LICENSE",
+        "COPYING",
+        "COPYRIGHT"
+      ]
     },
     {
       "repository": "Abysswire",

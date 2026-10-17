@@ -3,8 +3,8 @@
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssparse
 version=0.6.8.20261017
-revision=1
-_commit=dcd10adbf858a4f0128a04938878844d935298d9
+revision=2
+_commit=45d399ec11762312395d62f1e66f6d3c4b53c482
 wrksrc="Abyssparse-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,10 +16,12 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="LGPL-3.0-only"
 homepage="https://github.com/AbyssWM/Abyssparse"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=cedd57c46b449d5ba8998020d458cc9a6a9394759225342aa1048964125cf685
+checksum=b3b43a824e8a6112c7a62534536f712146ea27daea77ff6afe06179d536e47c4
 
 post_install() {
 	vlicense LICENSE
+	vlicense COPYING
+	vlicense COPYRIGHT
 }
 
 abyssparse-devel_package() {

@@ -40,14 +40,14 @@
     },
     {
       "repo": "Abyssparse",
-      "commit": "dcd10adbf858a4f0128a04938878844d935298d9",
+      "commit": "45d399ec11762312395d62f1e66f6d3c4b53c482",
       "version": "0.6.8",
-      "url": "https://github.com/AbyssWM/Abyssparse/archive/dcd10adbf858a4f0128a04938878844d935298d9.tar.gz",
-      "filename": "Abyssparse-dcd10adbf858a4f0128a04938878844d935298d9.tar.gz",
-      "size": 61826,
-      "sha256": "cedd57c46b449d5ba8998020d458cc9a6a9394759225342aa1048964125cf685",
-      "sha512": "4e81a10f828fbd9569c7f42afc1da9f8298f7ffa8c8dae40df5cb51e80b98b21ac2b6d57d72e6002e4c1183a28a16f3c30fab58bfe44dda7c17ef2a6b89f31a6",
-      "blake2b": "63b223abbde550dc839884817dcc6c33cdf043054833adc15712e407d300972518ed255698167b64f3edd3fe15d2e8676e323f0196f3e0a256d2957355f7bccc"
+      "url": "https://github.com/AbyssWM/Abyssparse/archive/45d399ec11762312395d62f1e66f6d3c4b53c482.tar.gz",
+      "filename": "Abyssparse-45d399ec11762312395d62f1e66f6d3c4b53c482.tar.gz",
+      "size": 73214,
+      "sha256": "b3b43a824e8a6112c7a62534536f712146ea27daea77ff6afe06179d536e47c4",
+      "sha512": "faa76817c64a89d09d88ec6c162b7062af84641988725a615b5c72fd4b9b2c02b2a4c42eb458fa67ee62a856a701c1717cf0be68d6b67f8a96651a9fc49ce096",
+      "blake2b": "06cafefe4bcf10e148031a193c5888c1a8fc31d6267e70776e0305573e9f6a232379bf4442c1623d19800c50044215e2a1af69a9c1bcfe5b805f4b4678dd05fc"
     },
     {
       "repo": "Abysswire",
