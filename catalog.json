@@ -195,6 +195,10 @@
     "gtest": {
       "void": "gtest-devel",
       "gentoo": "dev-cpp/gtest"
+    },
+    "readline": {
+      "void": "readline-devel",
+      "gentoo": "sys-libs/readline"
     }
   },
   "packages": {
@@ -420,13 +424,15 @@
         "xcb-wm",
         "xcb-errors",
         "xcb-render",
-        "xcb-keysyms"
+        "xcb-keysyms",
+        "readline"
       ],
       "internal": [
         "abyssal",
         "abysscursor",
         "abyssutils",
-        "abyssgraphics"
+        "abyssgraphics",
+        "abysswire"
       ],
       "build_internal": [
         "abyss-scanner",

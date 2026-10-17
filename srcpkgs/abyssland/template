@@ -14,7 +14,7 @@ configure_args="-DBUILD_TESTING=OFF
  -DNO_SYSTEMD=ON
  -DNO_UWSM=ON"
 hostmakedepends="abyss-scanner abyssland-protocols pkg-config python3"
-makedepends="MesaLib-devel SPIRV-Tools-devel abyssal-devel abysscursor-devel abyssgraphics-devel abyssutils-devel cairo-devel glib-devel glslang-devel lcms2-devel libXcursor-devel libdrm-devel libei-devel libglvnd-devel libinput-devel libuuid-devel libxcb-devel libxkbcommon-devel muparser-devel pango-devel pixman-devel re2-devel udis86-devel wayland-devel wayland-protocols xcb-util-errors-devel xcb-util-keysyms-devel xcb-util-renderutil-devel xcb-util-wm-devel"
+makedepends="MesaLib-devel SPIRV-Tools-devel abyssal-devel abysscursor-devel abyssgraphics-devel abyssutils-devel abysswire-devel cairo-devel glib-devel glslang-devel lcms2-devel libXcursor-devel libdrm-devel libei-devel libglvnd-devel libinput-devel libuuid-devel libxcb-devel libxkbcommon-devel muparser-devel pango-devel pixman-devel re2-devel readline-devel udis86-devel wayland-devel wayland-protocols xcb-util-errors-devel xcb-util-keysyms-devel xcb-util-renderutil-devel xcb-util-wm-devel"
 depends="dbus xorg-server-xwayland"
 short_desc="Dynamic tiling Wayland compositor with C++ configuration"
 maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
