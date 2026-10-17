@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abysscursor'
+# Pinned development snapshot; not an upstream release.
+pkgname=abysscursor
+version=0.1.13.20261017
+revision=1
+_commit=6a762edb75677f8cc46a20cb26b615bbabb5155a
+wrksrc="Abysscursor-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="pkg-config"
+makedepends="abyssparse-devel cairo-devel librsvg-devel libzip-devel tomlplusplus-devel"
+short_desc="Cursor library and theme tools for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abysscursor"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=a18b616212a28339358fdf84158ecf0ac0163e61d4d194bda6776a91a79586b5
+
+post_install() {
+	vlicense LICENSE
+}
+
+abysscursor-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} abyssparse-devel cairo-devel librsvg-devel libzip-devel tomlplusplus-devel"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove "usr/lib/*.so"
+		vmove usr/lib/pkgconfig
+	}
+}

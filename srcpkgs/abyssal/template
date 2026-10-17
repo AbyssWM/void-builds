@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyssal'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyssal
+version=0.15.0.20261017
+revision=1
+_commit=95bbf980b4c704b517d557038ba4460080847314
+wrksrc="Abyssal-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="abyss-scanner pkg-config"
+makedepends="MesaLib-devel abyssutils-devel eudev-libudev-devel hwids libdisplay-info-devel libdrm-devel libglvnd-devel libinput-devel libseat-devel pixman-devel wayland-devel wayland-protocols"
+short_desc="Rendering and display backend library for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abyssal"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=269bdf8c8bced938de0c772fa90907a4e82d08a3cb8e9e1a16a3da8006e653d0
+
+post_install() {
+	vlicense LICENSE
+}
+
+abyssal-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} MesaLib-devel abyssutils-devel eudev-libudev-devel hwids libdisplay-info-devel libdrm-devel libglvnd-devel libinput-devel libseat-devel pixman-devel wayland-devel wayland-protocols"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove "usr/lib/*.so"
+		vmove usr/lib/pkgconfig
+	}
+}

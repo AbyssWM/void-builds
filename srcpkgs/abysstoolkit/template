@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abysstoolkit'
+# Pinned development snapshot; not an upstream release.
+pkgname=abysstoolkit
+version=0.6.0.20261017
+revision=1
+_commit=9a095e013abdd600b617e912f207430eaeafda18
+wrksrc="Abysstoolkit-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="abyss-scanner pkg-config"
+makedepends="MesaLib-devel abseil-cpp-devel abyssal-devel abyssgraphics-devel abyssparse-devel abyssutils-devel cairo-devel iniparser-devel libdrm-devel libglvnd-devel libxkbcommon-devel pango-devel pixman-devel wayland-devel wayland-protocols"
+depends="python3"
+short_desc="Native graphical toolkit and config preprocessor for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abysstoolkit"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=61622f6f4ae903e5e991d9d555b12207c97cf274def0b7934b348628f531b156
+
+post_install() {
+	vlicense LICENSE
+}
+
+abysstoolkit-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} MesaLib-devel abseil-cpp-devel abyssal-devel abyssgraphics-devel abyssparse-devel abyssutils-devel cairo-devel iniparser-devel libdrm-devel libglvnd-devel libxkbcommon-devel pango-devel pixman-devel wayland-devel wayland-protocols"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove "usr/lib/*.so"
+		vmove usr/lib/pkgconfig
+		vmove usr/share/abysstoolkit/cmake
+	}
+}

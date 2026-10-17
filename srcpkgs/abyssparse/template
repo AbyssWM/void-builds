@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyssparse'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyssparse
+version=0.6.8.20261017
+revision=1
+_commit=dcd10adbf858a4f0128a04938878844d935298d9
+wrksrc="Abyssparse-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="pkg-config"
+makedepends="abyssutils-devel"
+short_desc="Configuration parsing library for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="LGPL-3.0-only"
+homepage="https://github.com/AbyssWM/Abyssparse"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=cedd57c46b449d5ba8998020d458cc9a6a9394759225342aa1048964125cf685
+
+post_install() {
+	vlicense LICENSE
+}
+
+abyssparse-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} abyssutils-devel"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove "usr/lib/*.so"
+		vmove usr/lib/pkgconfig
+	}
+}

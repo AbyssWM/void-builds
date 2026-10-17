@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyss-guiutils'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyss-guiutils
+version=0.2.2.20261017
+revision=1
+_commit=da6646906dab8557440ed8f5cca4157452105fc2
+wrksrc="Abyss-guiutils-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="pkg-config"
+makedepends="abyssparse-devel abysstoolkit-devel abyssutils-devel libdrm-devel libxkbcommon-devel pixman-devel"
+short_desc="Dialogs and application tools for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abyss-guiutils"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=f2eb180c298dc718b8e3b144c9f114a05e4e9aacd852d01864162dda65a06d48
+
+post_install() {
+	vlicense LICENSE
+}

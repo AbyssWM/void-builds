@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyss-scanner'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyss-scanner
+version=0.4.5.20261017
+revision=1
+_commit=84f54bf0d3074ef8700d3e89699181accdd28cba
+wrksrc="Abyss-scanner-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="pkg-config"
+makedepends="pugixml-devel"
+short_desc="C++ Wayland protocol scanner for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abyss-scanner"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=82528be339b642f28a38ca495a6388300313dce37e624d67ae2c88e3992a1255
+
+post_install() {
+	vlicense LICENSE
+}

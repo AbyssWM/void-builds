@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyssdusk'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyssdusk
+version=0.4.0.20261017
+revision=1
+_commit=01ad76f953f8d5139b5e03cd7cfaaf9342667f0b
+wrksrc="AbyssDusk-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+hostmakedepends="abyss-scanner abyssland-protocols pkg-config"
+makedepends="abyssparse-devel abyssutils-devel wayland-devel wayland-protocols"
+short_desc="Display color temperature manager for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/AbyssDusk"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=1870725946980001ea426c8723cfb7b3c0f2536673049a25a0762b8b59ef6b8c
+
+post_install() {
+	vlicense LICENSE
+}

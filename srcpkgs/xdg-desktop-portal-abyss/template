@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'xdg-desktop-portal-abyss'
+# Pinned development snapshot; not an upstream release.
+pkgname=xdg-desktop-portal-abyss
+version=1.4.1.20261017
+revision=1
+_commit=c4e1197e9aaed10773d0d142d13d40223a92b0eb
+wrksrc="Xdg-desktop-portal-abyss-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON
+ -DSYSTEMD_SERVICES=OFF"
+hostmakedepends="abyss-scanner abyssland-protocols pkg-config"
+makedepends="MesaLib-devel abyssparse-devel abyssutils-devel libdrm-devel libuuid-devel pipewire-devel qt6-base-devel sdbus-c++-devel wayland-devel wayland-protocols"
+depends="xdg-desktop-portal"
+short_desc="Desktop portal and screen sharing picker for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Xdg-desktop-portal-abyss"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=962d8e61267e48b3e5d2c84e9104cb0a0a93a0f893781626d7eb072a5848b5ae
+
+post_install() {
+	vlicense LICENSE
+}

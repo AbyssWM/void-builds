@@ -1,0 +1,8 @@
+out/
+__pycache__/
+*.pyc
+*.xbps
+*.pem
+*.key
+*.p12
+*.pfx

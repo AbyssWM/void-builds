@@ -1,0 +1,632 @@
+{
+  "dependencies": {
+    "pixman": {
+      "void": "pixman-devel",
+      "gentoo": "x11-libs/pixman"
+    },
+    "pugixml": {
+      "void": "pugixml-devel",
+      "gentoo": "dev-libs/pugixml"
+    },
+    "ffi": {
+      "void": "libffi-devel",
+      "gentoo": "dev-libs/libffi"
+    },
+    "cairo": {
+      "void": "cairo-devel",
+      "gentoo": "x11-libs/cairo"
+    },
+    "pango": {
+      "void": "pango-devel",
+      "gentoo": "x11-libs/pango"
+    },
+    "jpeg": {
+      "void": "libjpeg-turbo-devel",
+      "gentoo": "media-libs/libjpeg-turbo"
+    },
+    "webp": {
+      "void": "libwebp-devel",
+      "gentoo": "media-libs/libwebp"
+    },
+    "magic": {
+      "void": "file-devel",
+      "gentoo": "sys-apps/file"
+    },
+    "png": {
+      "void": "libpng-devel",
+      "gentoo": "media-libs/libpng"
+    },
+    "rsvg": {
+      "void": "librsvg-devel",
+      "gentoo": "gnome-base/librsvg"
+    },
+    "jxl": {
+      "void": "libjxl-devel",
+      "gentoo": "media-libs/libjxl"
+    },
+    "heif": {
+      "void": "libheif-devel",
+      "gentoo": "media-libs/libheif"
+    },
+    "drm": {
+      "void": "libdrm-devel",
+      "gentoo": "x11-libs/libdrm"
+    },
+    "mesa": {
+      "void": "MesaLib-devel",
+      "gentoo": "media-libs/mesa"
+    },
+    "glvnd": {
+      "void": "libglvnd-devel",
+      "gentoo": "media-libs/libglvnd"
+    },
+    "seat": {
+      "void": "libseat-devel",
+      "gentoo": "sys-auth/seatd"
+    },
+    "input": {
+      "void": "libinput-devel",
+      "gentoo": ">=dev-libs/libinput-1.29"
+    },
+    "wayland": {
+      "void": "wayland-devel",
+      "gentoo": "dev-libs/wayland"
+    },
+    "wayland-protocols": {
+      "void": "wayland-protocols",
+      "gentoo": ">=dev-libs/wayland-protocols-1.49"
+    },
+    "udev": {
+      "void": "eudev-libudev-devel",
+      "gentoo": "virtual/libudev"
+    },
+    "display-info": {
+      "void": "libdisplay-info-devel",
+      "gentoo": "media-libs/libdisplay-info"
+    },
+    "hwdata": {
+      "void": "hwids",
+      "gentoo": "sys-apps/hwdata"
+    },
+    "xkb": {
+      "void": "libxkbcommon-devel",
+      "gentoo": "x11-libs/libxkbcommon"
+    },
+    "iniparser": {
+      "void": "iniparser-devel",
+      "gentoo": "dev-libs/iniparser"
+    },
+    "abseil": {
+      "void": "abseil-cpp-devel",
+      "gentoo": "dev-cpp/abseil-cpp"
+    },
+    "zip": {
+      "void": "libzip-devel",
+      "gentoo": "dev-libs/libzip"
+    },
+    "toml": {
+      "void": "tomlplusplus-devel",
+      "gentoo": "dev-cpp/tomlplusplus"
+    },
+    "uuid": {
+      "void": "libuuid-devel",
+      "gentoo": "sys-apps/util-linux"
+    },
+    "re2": {
+      "void": "re2-devel",
+      "gentoo": "dev-libs/re2"
+    },
+    "muparser": {
+      "void": "muparser-devel",
+      "gentoo": "dev-cpp/muParser"
+    },
+    "lcms": {
+      "void": "lcms2-devel",
+      "gentoo": "media-libs/lcms"
+    },
+    "ei": {
+      "void": "libei-devel",
+      "gentoo": "dev-libs/libei"
+    },
+    "glib": {
+      "void": "glib-devel",
+      "gentoo": "dev-libs/glib"
+    },
+    "glslang": {
+      "void": "glslang-devel",
+      "gentoo": "dev-util/glslang"
+    },
+    "spirv": {
+      "void": "SPIRV-Tools-devel",
+      "gentoo": "dev-util/spirv-tools"
+    },
+    "udis": {
+      "void": "udis86-devel",
+      "gentoo": "dev-libs/udis86"
+    },
+    "xcursor": {
+      "void": "libXcursor-devel",
+      "gentoo": "x11-libs/libXcursor"
+    },
+    "xcb": {
+      "void": "libxcb-devel",
+      "gentoo": "x11-libs/libxcb"
+    },
+    "xcb-wm": {
+      "void": "xcb-util-wm-devel",
+      "gentoo": "x11-libs/xcb-util-wm"
+    },
+    "xcb-errors": {
+      "void": "xcb-util-errors-devel",
+      "gentoo": "x11-libs/xcb-util-errors"
+    },
+    "xcb-render": {
+      "void": "xcb-util-renderutil-devel",
+      "gentoo": "x11-libs/xcb-util-renderutil"
+    },
+    "xcb-keysyms": {
+      "void": "xcb-util-keysyms-devel",
+      "gentoo": "x11-libs/xcb-util-keysyms"
+    },
+    "pipewire": {
+      "void": "pipewire-devel",
+      "gentoo": ">=media-video/pipewire-1.1.82"
+    },
+    "sdbus": {
+      "void": "sdbus-c++-devel",
+      "gentoo": ">=dev-cpp/sdbus-c++-2"
+    },
+    "qt": {
+      "void": "qt6-base-devel",
+      "gentoo": "dev-qt/qtbase:6[widgets]"
+    },
+    "pam": {
+      "void": "pam-devel",
+      "gentoo": "sys-libs/pam"
+    },
+    "mpv": {
+      "void": "mpv-devel",
+      "gentoo": "media-video/mpv[libmpv]"
+    },
+    "python": {
+      "void": "python3",
+      "gentoo": "dev-lang/python:3.14"
+    },
+    "gtest": {
+      "void": "gtest-devel",
+      "gentoo": "dev-cpp/gtest"
+    }
+  },
+  "packages": {
+    "Abyssutils": {
+      "name": "abyssutils",
+      "description": "Utility library for the Abyss ecosystem",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "pixman"
+      ],
+      "internal": [],
+      "build_internal": [],
+      "library": true,
+      "soname": 13
+    },
+    "Abyss-scanner": {
+      "name": "abyss-scanner",
+      "description": "C++ Wayland protocol scanner for Abyss",
+      "category": "dev-util",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "pugixml"
+      ],
+      "internal": [],
+      "build_internal": []
+    },
+    "Abyssland-protocols": {
+      "name": "abyssland-protocols",
+      "description": "Wayland protocol extensions for Abyss",
+      "category": "dev-libs",
+      "build_system": "meson",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [],
+      "internal": [],
+      "build_internal": []
+    },
+    "Abyssparse": {
+      "name": "abyssparse",
+      "description": "Configuration parsing library for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "LGPL-3.0-only",
+      "gentoo_license": "LGPL-3",
+      "dependencies": [],
+      "internal": [
+        "abyssutils"
+      ],
+      "build_internal": [],
+      "library": true,
+      "soname": 2
+    },
+    "Abysswire": {
+      "name": "abysswire",
+      "description": "IPC wire protocol library and scanner for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "ffi",
+        "pugixml"
+      ],
+      "internal": [
+        "abyssutils"
+      ],
+      "build_internal": [],
+      "library": true,
+      "soname": 3
+    },
+    "Abyssgraphics": {
+      "name": "abyssgraphics",
+      "description": "Graphics and resource library for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "drm",
+        "pixman",
+        "cairo",
+        "pango",
+        "jpeg",
+        "webp",
+        "magic",
+        "png",
+        "rsvg",
+        "jxl",
+        "heif",
+        "mesa",
+        "glvnd"
+      ],
+      "internal": [
+        "abyssutils"
+      ],
+      "build_internal": [],
+      "library": true,
+      "soname": 4
+    },
+    "Abyssal": {
+      "name": "abyssal",
+      "description": "Rendering and display backend library for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "seat",
+        "input",
+        "wayland",
+        "wayland-protocols",
+        "pixman",
+        "drm",
+        "mesa",
+        "glvnd",
+        "udev",
+        "display-info",
+        "hwdata"
+      ],
+      "internal": [
+        "abyssutils"
+      ],
+      "build_internal": [
+        "abyss-scanner"
+      ],
+      "library": true,
+      "soname": 14
+    },
+    "Abysstoolkit": {
+      "name": "abysstoolkit",
+      "description": "Native graphical toolkit and config preprocessor for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols",
+        "mesa",
+        "glvnd",
+        "pixman",
+        "drm",
+        "xkb",
+        "pango",
+        "cairo",
+        "iniparser",
+        "abseil"
+      ],
+      "internal": [
+        "abyssal",
+        "abyssgraphics",
+        "abyssutils",
+        "abyssparse"
+      ],
+      "build_internal": [
+        "abyss-scanner"
+      ],
+      "library": true,
+      "soname": 6,
+      "runtime": {
+        "void": [
+          "python3"
+        ],
+        "gentoo": [
+          "dev-lang/python:3.14"
+        ]
+      }
+    },
+    "Abysscursor": {
+      "name": "abysscursor",
+      "description": "Cursor library and theme tools for Abyss",
+      "category": "dev-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "zip",
+        "cairo",
+        "rsvg",
+        "toml"
+      ],
+      "internal": [
+        "abyssparse"
+      ],
+      "build_internal": [],
+      "library": true,
+      "soname": 0
+    },
+    "Abyssland": {
+      "name": "abyssland",
+      "description": "Dynamic tiling Wayland compositor with C++ configuration",
+      "category": "gui-wm",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols",
+        "xkb",
+        "uuid",
+        "cairo",
+        "pango",
+        "pixman",
+        "xcursor",
+        "drm",
+        "input",
+        "ei",
+        "mesa",
+        "glvnd",
+        "glib",
+        "re2",
+        "muparser",
+        "lcms",
+        "glslang",
+        "spirv",
+        "udis",
+        "xcb",
+        "xcb-wm",
+        "xcb-errors",
+        "xcb-render",
+        "xcb-keysyms"
+      ],
+      "internal": [
+        "abyssal",
+        "abysscursor",
+        "abyssutils",
+        "abyssgraphics"
+      ],
+      "build_internal": [
+        "abyss-scanner",
+        "abyssland-protocols"
+      ],
+      "runtime": {
+        "void": [
+          "dbus",
+          "xorg-server-xwayland"
+        ],
+        "gentoo": [
+          "sys-apps/dbus",
+          "x11-base/xwayland"
+        ]
+      },
+      "build_dependencies": [
+        "python"
+      ]
+    },
+    "Abyss-guiutils": {
+      "name": "abyss-guiutils",
+      "description": "Dialogs and application tools for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "pixman",
+        "xkb",
+        "drm"
+      ],
+      "internal": [
+        "abyssparse",
+        "abyssutils",
+        "abysstoolkit"
+      ],
+      "build_internal": []
+    },
+    "Xdg-desktop-portal-abyss": {
+      "name": "xdg-desktop-portal-abyss",
+      "description": "Desktop portal and screen sharing picker for Abyss",
+      "category": "gui-libs",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols",
+        "pipewire",
+        "drm",
+        "uuid",
+        "mesa",
+        "sdbus",
+        "qt"
+      ],
+      "internal": [
+        "abyssparse",
+        "abyssutils"
+      ],
+      "build_internal": [
+        "abyss-scanner",
+        "abyssland-protocols"
+      ],
+      "cmake": [
+        "-DSYSTEMD_SERVICES=OFF"
+      ],
+      "runtime": {
+        "void": [
+          "xdg-desktop-portal"
+        ],
+        "gentoo": [
+          "sys-apps/xdg-desktop-portal"
+        ]
+      }
+    },
+    "AbyssPicker": {
+      "name": "abysspicker",
+      "description": "Wayland color picker for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols",
+        "xkb",
+        "cairo",
+        "pango",
+        "jpeg"
+      ],
+      "internal": [
+        "abyssutils"
+      ],
+      "build_internal": [
+        "abyss-scanner"
+      ]
+    },
+    "AbyssDusk": {
+      "name": "abyssdusk",
+      "description": "Display color temperature manager for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols"
+      ],
+      "internal": [
+        "abyssutils",
+        "abyssparse"
+      ],
+      "build_internal": [
+        "abyss-scanner",
+        "abyssland-protocols"
+      ]
+    },
+    "AbyssPaper": {
+      "name": "abysspaper",
+      "description": "Wallpaper manager for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "pixman",
+        "drm",
+        "mpv",
+        "mesa",
+        "glvnd"
+      ],
+      "internal": [
+        "abyssparse",
+        "abyssutils",
+        "abysstoolkit",
+        "abysswire"
+      ],
+      "build_internal": [
+        "abyss-scanner"
+      ]
+    },
+    "AbyssLock": {
+      "name": "abysslock",
+      "description": "Wayland session lock for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "wayland",
+        "wayland-protocols",
+        "mesa",
+        "glvnd",
+        "xkb",
+        "cairo",
+        "pango",
+        "drm",
+        "sdbus",
+        "pam"
+      ],
+      "internal": [
+        "abyssparse",
+        "abyssutils",
+        "abyssgraphics"
+      ],
+      "build_internal": [
+        "abyss-scanner"
+      ],
+      "patches": [
+        "0001-install-pam-in-sysconfdir.patch"
+      ]
+    },
+    "AbyssPolkit": {
+      "name": "abysspolkit",
+      "description": "Polkit authentication agent for Abyss",
+      "category": "gui-apps",
+      "build_system": "cmake",
+      "license": "BSD-3-Clause",
+      "gentoo_license": "BSD",
+      "dependencies": [
+        "pixman",
+        "drm",
+        "sdbus"
+      ],
+      "internal": [
+        "abyssutils",
+        "abysstoolkit",
+        "abyssgraphics",
+        "abyssparse"
+      ],
+      "build_internal": [],
+      "runtime": {
+        "void": [
+          "polkit"
+        ],
+        "gentoo": [
+          "sys-auth/polkit"
+        ]
+      }
+    }
+  }
+}

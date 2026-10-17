@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyssland-protocols'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyssland-protocols
+version=0.7.0.20261017
+revision=1
+_commit=23246e7462e75bc07a04e62b1edc68b68770f73e
+wrksrc="Abyssland-protocols-${_commit}"
+build_style=meson
+hostmakedepends="pkg-config"
+short_desc="Wayland protocol extensions for Abyss"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abyssland-protocols"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=1cbc35cfa275eaae72614897d2b1b0ebe2af5708e383b4aa1fbdc88df3542822
+
+post_install() {
+	vlicense LICENSE
+}

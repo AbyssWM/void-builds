@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: 0BSD
+# Template file for 'abyssland'
+# Pinned development snapshot; not an upstream release.
+pkgname=abyssland
+version=0.56.2.20261017
+revision=1
+_commit=eafefb8907b6b6b46990977b56ec83dbcb019957
+wrksrc="Abyssland-${_commit}"
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF
+ -DFETCHCONTENT_FULLY_DISCONNECTED=ON
+ -DABYSS_CONFIG=${wrksrc}/${build_wrksrc}/config.def.hpp
+ -DFETCHCONTENT_SOURCE_DIR_GLAZE=${wrksrc}/glaze-7.2.0
+ -DNO_SYSTEMD=ON
+ -DNO_UWSM=ON"
+hostmakedepends="abyss-scanner abyssland-protocols pkg-config python3"
+makedepends="MesaLib-devel SPIRV-Tools-devel abyssal-devel abysscursor-devel abyssgraphics-devel abyssutils-devel cairo-devel glib-devel glslang-devel lcms2-devel libXcursor-devel libdrm-devel libei-devel libglvnd-devel libinput-devel libuuid-devel libxcb-devel libxkbcommon-devel muparser-devel pango-devel pixman-devel re2-devel udis86-devel wayland-devel wayland-protocols xcb-util-errors-devel xcb-util-keysyms-devel xcb-util-renderutil-devel xcb-util-wm-devel"
+depends="dbus xorg-server-xwayland"
+short_desc="Dynamic tiling Wayland compositor with C++ configuration"
+maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
+license="BSD-3-Clause"
+homepage="https://github.com/AbyssWM/Abyssland"
+distfiles="${homepage}/archive/${_commit}.tar.gz"
+checksum=c2776b36ad45fec8e8791c092c9bbb046c75a2276f56d1dbdc4f6dde1c59316c
+wrksrc="${pkgname}-${version}"
+build_wrksrc="Abyssland-${_commit}"
+distfiles+=" https://github.com/stephenberry/glaze/archive/refs/tags/v7.2.0.tar.gz>glaze-7.2.0.tar.gz"
+checksum+=" 17dba19ae63ae48f94994f00d49d5cb3c8f1306db1046c534c4828662490b7d4"
+
+post_install() {
+	vlicense LICENSE
+	vlicense "${wrksrc}/glaze-7.2.0/LICENSE" glaze-LICENSE
+}

@@ -1,0 +1,8 @@
+Install the PAM service in the configured system directory, not /usr/etc.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -164,2 +164,2 @@
+ install(FILES ${CMAKE_SOURCE_DIR}/pam/abysslock
+-        DESTINATION ${CMAKE_INSTALL_PREFIX}/etc/pam.d)
++        DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/pam.d)
