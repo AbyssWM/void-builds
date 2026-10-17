@@ -573,6 +573,9 @@
       ],
       "build_internal": [
         "abyss-scanner"
+      ],
+      "patches": [
+        "0001-find-installed-config-module.patch"
       ]
     },
     "AbyssLock": {
