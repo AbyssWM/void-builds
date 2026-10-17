@@ -28,9 +28,9 @@ def void(package, catalog, sources):
     if package["build_system"] == "cmake":
         options = ["-DBUILD_TESTING=OFF", "-DFETCHCONTENT_FULLY_DISCONNECTED=ON"] + options
     if name == "abyssland":
-        options += ['-DABYSS_CONFIG=${wrksrc}/${build_wrksrc}/config.def.hpp', '-DFETCHCONTENT_SOURCE_DIR_GLAZE=${wrksrc}/glaze-7.2.0', '-DNO_SYSTEMD=ON', '-DNO_UWSM=ON']
+        options += ['-DABYSS_CONFIG=${XBPS_BUILDDIR}/${pkgname}-${version}/Abyssland-${_commit}/config.def.hpp', '-DFETCHCONTENT_SOURCE_DIR_GLAZE=${XBPS_BUILDDIR}/${pkgname}-${version}/glaze-7.2.0', '-DNO_SYSTEMD=ON', '-DNO_UWSM=ON']
     if name == "abysspaper":
-        options += ['-DABYSS_CONFIG_DIR=${wrksrc}/empty-config']
+        options += ['-DABYSS_CONFIG_DIR=${XBPS_BUILDDIR}/${pkgname}-${version}/empty-config']
     version = package["version"] + "." + sources["snapshot_date"]
     text = f'''# SPDX-License-Identifier: 0BSD
 # Template file for '{name}'

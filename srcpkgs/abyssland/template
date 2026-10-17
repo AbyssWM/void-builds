@@ -9,8 +9,8 @@ wrksrc="Abyssland-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DFETCHCONTENT_FULLY_DISCONNECTED=ON
- -DABYSS_CONFIG=${wrksrc}/${build_wrksrc}/config.def.hpp
- -DFETCHCONTENT_SOURCE_DIR_GLAZE=${wrksrc}/glaze-7.2.0
+ -DABYSS_CONFIG=${XBPS_BUILDDIR}/${pkgname}-${version}/Abyssland-${_commit}/config.def.hpp
+ -DFETCHCONTENT_SOURCE_DIR_GLAZE=${XBPS_BUILDDIR}/${pkgname}-${version}/glaze-7.2.0
  -DNO_SYSTEMD=ON
  -DNO_UWSM=ON"
 hostmakedepends="abyss-scanner abyssland-protocols pkg-config python3"

@@ -9,7 +9,7 @@ wrksrc="AbyssPaper-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DFETCHCONTENT_FULLY_DISCONNECTED=ON
- -DABYSS_CONFIG_DIR=${wrksrc}/empty-config"
+ -DABYSS_CONFIG_DIR=${XBPS_BUILDDIR}/${pkgname}-${version}/empty-config"
 hostmakedepends="abyss-scanner pkg-config"
 makedepends="MesaLib-devel abyssparse-devel abysstoolkit-devel abyssutils-devel abysswire-devel libdrm-devel libglvnd-devel mpv-devel pixman-devel wayland-devel"
 short_desc="Wallpaper manager for Abyss"
