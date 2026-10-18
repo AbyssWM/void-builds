@@ -106,14 +106,14 @@
     },
     {
       "repo": "Abyssland",
-      "commit": "c30ad2a50fc41b2025280ded8b54effb87624480",
+      "commit": "6c90ce00a92bac527172c3590b95e094fcd08a73",
       "version": "0.56.2",
-      "url": "https://github.com/AbyssWM/Abyssland/archive/c30ad2a50fc41b2025280ded8b54effb87624480.tar.gz",
-      "filename": "Abyssland-c30ad2a50fc41b2025280ded8b54effb87624480.tar.gz",
-      "size": 42136604,
-      "sha256": "70aff89b07756f52f8a776ab3f89ed9dab2614ce97635d0e7630773525873497",
-      "sha512": "3cf1cafaa514de444542a99bec192db99e9f00e4c17f302cba3fa1ed5094124a4b659dced9f2239e9baf58476c4ffb750e212df7b0168f0bfbb386b773905429",
-      "blake2b": "3d6fffc3eee235510cec2f541043be72db10d114fde6a374c1a45a903cdc38c4254bc7a43c8467dd830477bc81e6c27189d100070a05ad28445372cc8a7eefaa",
+      "url": "https://github.com/AbyssWM/Abyssland/archive/6c90ce00a92bac527172c3590b95e094fcd08a73.tar.gz",
+      "filename": "Abyssland-6c90ce00a92bac527172c3590b95e094fcd08a73.tar.gz",
+      "size": 42136890,
+      "sha256": "1d6d827ce878d105e1eb773ede286faf661843bd1cfe002f0245d575d835fdf7",
+      "sha512": "12c1bfa3dbeba01fe102d34c147e7084a4eb3c890dc24f0ceaace49ead3a8e3654cc493b25bed67b3f46f4349c9154160ee38f5cab3b2a22b8dd4ac88db659b7",
+      "blake2b": "11e8ddef2e592f73076c49c210e4b36fb3afef71d2c56652ce47cef6bc01d66ff3273beb330ea2d0eccac8e48a855cb47b140728cc6becf887b02838734539d6",
       "snapshot_date": "20261018"
     },
     {
