@@ -1,0 +1,87 @@
+# Builds all 17 Abyss packages with xbps-src from official void-packages, set up the way the
+# void-packages CI does it, and puts them into the rolling release "packages", where AbyssWM/void
+# picks them up, signs them and adds them to the XBPS repository.
+name: Build packages
+
+on:
+  push:
+    branches: [main]
+    paths: ["srcpkgs/**", "shlibs", "sources.json", "catalog.json", "tools/**", ".github/workflows/build.yml"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    container:
+      image: ghcr.io/void-linux/void-glibc-full
+      options: --privileged
+      volumes:
+        - /dev:/dev
+    steps:
+      - name: Prepare container
+        run: |
+          mkdir -p /etc/xbps.d && cp /usr/share/xbps.d/*-repository-*.conf /etc/xbps.d/
+          sed -i 's|repo-default|repo-ci|g' /etc/xbps.d/*-repository-*.conf
+          xbps-install -Syu xbps && xbps-install -yu && xbps-install -y sudo bash curl git python3
+          useradd -G xbuilder -M builder
+
+      - uses: actions/checkout@v4
+        with:
+          path: overlay
+
+      - name: Prepare void-packages
+        run: |
+          git clone --depth 1 https://github.com/void-linux/void-packages.git vp
+          mkdir -p logs
+          chown -R builder:builder vp overlay logs
+          cd vp
+          sudo -Eu builder sh -c 'echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf && echo XBPS_CHROOT_CMD=uchroot >> etc/conf'
+          sudo -Eu builder ./xbps-src binary-bootstrap
+          sudo -Eu builder python3 ../overlay/tools/prepare.py .
+
+      - name: Build every package
+        run: |
+          cd overlay
+          sudo -Eu builder python3 tools/build.py ../vp --logs ../logs --jobs "$(nproc)"
+
+      - name: Collect packages
+        run: |
+          mkdir -p pkgs
+          cp vp/hostdir/binpkgs/*.xbps pkgs/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: void-packages
+          path: pkgs/*.xbps
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: build-logs
+          path: logs/
+
+  release:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: void-packages
+          path: pkgs
+
+      - name: Replace the packages in the release
+        run: |
+          set -eu
+          gh release view packages >/dev/null 2>&1 || gh release create packages --title "Built packages" \
+            --notes "Packages built by the CI from main. Install them from the XBPS repository: https://github.com/AbyssWM/void"
+          for asset in $(gh release view packages --json assets -q '.assets[].name'); do
+            gh release delete-asset packages "$asset" --yes
+          done
+          gh release upload packages pkgs/*.xbps
