@@ -451,7 +451,8 @@
       },
       "build_dependencies": [
         "python"
-      ]
+      ],
+      "revision": 2
     },
     "Abyss-guiutils": {
       "name": "abyss-guiutils",

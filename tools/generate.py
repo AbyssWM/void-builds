@@ -71,6 +71,10 @@ checksum={package["sha256"]}
         text += '\tvlicense COPYING\n\tvlicense COPYRIGHT\n'
     if name == "abyssland":
         text += '\tvlicense "${wrksrc}/glaze-7.2.0/LICENSE" glaze-LICENSE\n'
+        # Void has no systemd user session, so offer a session that starts its own D-Bus (like hyprland's)
+        text += '\tsed -e "s|^Name=.*|Name=Abyssland (D-Bus)|" -e "s|^Exec=.*|Exec=dbus-run-session /usr/bin/start-abyssland|" \\\n'
+        text += '\t\t"${DESTDIR}/usr/share/wayland-sessions/abyssland.desktop" \\\n'
+        text += '\t\t> "${DESTDIR}/usr/share/wayland-sessions/abyssland-dbus.desktop"\n'
     text += '}\n'
     if package.get("library"):
         text += f'''

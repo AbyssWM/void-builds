@@ -3,7 +3,7 @@
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssland
 version=0.56.2.20261017
-revision=1
+revision=2
 _commit=eafefb8907b6b6b46990977b56ec83dbcb019957
 wrksrc="Abyssland-${_commit}"
 build_style=cmake
@@ -30,4 +30,7 @@ checksum+=" 17dba19ae63ae48f94994f00d49d5cb3c8f1306db1046c534c4828662490b7d4"
 post_install() {
 	vlicense LICENSE
 	vlicense "${wrksrc}/glaze-7.2.0/LICENSE" glaze-LICENSE
+	sed -e "s|^Name=.*|Name=Abyssland (D-Bus)|" -e "s|^Exec=.*|Exec=dbus-run-session /usr/bin/start-abyssland|" \
+		"${DESTDIR}/usr/share/wayland-sessions/abyssland.desktop" \
+		> "${DESTDIR}/usr/share/wayland-sessions/abyssland-dbus.desktop"
 }
