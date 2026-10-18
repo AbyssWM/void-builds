@@ -31,7 +31,7 @@ def void(package, catalog, sources):
         options += ['-DABYSS_CONFIG=${XBPS_BUILDDIR}/${pkgname}-${version}/Abyssland-${_commit}/config.def.hpp', '-DFETCHCONTENT_SOURCE_DIR_GLAZE=${XBPS_BUILDDIR}/${pkgname}-${version}/glaze-7.2.0', '-DNO_SYSTEMD=ON', '-DNO_UWSM=ON']
     if name == "abysspaper":
         options += ['-DABYSS_CONFIG_DIR=${XBPS_BUILDDIR}/${pkgname}-${version}/empty-config']
-    version = package["version"] + "." + sources["snapshot_date"]
+    version = package["version"] + "." + package.get("snapshot_date", sources["snapshot_date"])
     text = f'''# SPDX-License-Identifier: 0BSD
 # Template file for '{name}'
 # Pinned development snapshot; not an upstream release.
@@ -104,7 +104,7 @@ def main():
     for package in sources["packages"]:
         void(package, catalog, sources)
     write(ROOT / "shlibs", "\n".join(
-        f'lib{p["name"]}.so.{p["soname"]} {p["name"]}-{p["version"]}.{sources["snapshot_date"]}_1'
+        f'lib{p["name"]}.so.{p["soname"]} {p["name"]}-{p["version"]}.{p.get("snapshot_date", sources["snapshot_date"])}_1'
         for p in sources["packages"] if p.get("library")) + "\n")
 
 
