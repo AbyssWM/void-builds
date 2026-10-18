@@ -1,45 +1,103 @@
-# Abyss Void builds
+<div align="center">
 
-Experimental Void Linux package templates for all 17 Abyss repositories.
-These are third-party development snapshots, not packages accepted into Void's
-official repository. All 17 pinned primary packages built successfully on
-x86_64/glibc with xbps-src in an isolated buildroot (2026-10-17). See
-`BUILD-RESULTS.json` for the exact artifact hashes. The seven libraries also
-produce development subpackages. Installation and live desktop tests, other
-architectures, musl, signing and public binary hosting remain pending.
-Project test suites were disabled for this packaging build.
+<img src="https://github.com/AbyssWM.png?size=200" width="140" alt="AbyssWM logo">
 
-`sources.json` pins the public archives and their hashes. `catalog.json` records
-dependencies and package names. The seven libraries have separate `-devel`
-packages. `shlibs` supplies their SONAME mappings. The compositor compiles the
-public default config, never the packager's personal configuration.
+# 🌊 Abyss for Void Linux
 
-Use a dedicated checkout of the official
-[void-packages](https://github.com/void-linux/void-packages) build system:
+**xbps-src templates for the Abyss Wayland ecosystem (17 packages)**
+
+![Void](https://img.shields.io/badge/Void-xbps--src-478061?logo=voidlinux&logoColor=white) ![Arch](https://img.shields.io/badge/x86__64-glibc-informational) ![Native build](https://img.shields.io/badge/native%20build-17%2F17%20passed-brightgreen) ![Install tests](https://img.shields.io/badge/install%20%2F%20session%20tests-pending-lightgrey) ![License](https://img.shields.io/badge/recipes-0BSD-blue)
+
+[Website](https://abysswm.github.io) · [Getting started](https://abysswm.github.io/wiki/getting-started) · [Organization](https://github.com/AbyssWM)
+
+</div>
+
+---
+
+Third-party development templates, not part of Void's official repository. Packages are built locally with `xbps-src`; no binary repository is hosted yet. The seven libraries also produce `-devel` subpackages, and `shlibs` supplies their SONAME mappings.
+
+## 🚀 Installation
+
+**1. Get the official build system** and bootstrap it as an ordinary user:
 
 ```sh
-python3 tools/prepare.py /path/to/void-packages
+git clone https://github.com/void-linux/void-packages.git
+git clone https://github.com/AbyssWM/void-builds.git
 ```
 
-Configure `XBPS_CHROOT_CMD=bwrap` in that checkout's `etc/conf` and run its
-`./xbps-src binary-bootstrap` as an ordinary user. Then, from this repository:
+**2. Copy the templates and shlibs entries.** `tools/prepare.py` copies every template in `srcpkgs/` (including the `-devel` symlinks) and merges the `shlibs` lines into `common/shlibs`. It refuses to overwrite unrelated templates:
+
+```sh
+python3 void-builds/tools/prepare.py void-packages
+```
+
+**3. Bootstrap and build:**
+
+```sh
+cd void-packages
+./xbps-src binary-bootstrap
+./xbps-src pkg abyssland
+```
+
+Dependencies from this overlay (`abyssutils`, `abysswire`, ...) are built automatically from their templates. For the bubblewrap setup used by the maintainer, set `XBPS_CHROOT_CMD=bwrap` in `etc/conf`.
+
+**4. Install from the local repository:**
+
+```sh
+sudo xbps-install -R hostdir/binpkgs abyssland
+```
+
+Then continue with the [getting-started guide](https://abysswm.github.io/wiki/getting-started).
+
+## 📦 Packages
+
+| Package | Category | Version | Description |
+|---|---|---|---|
+| `abyssutils` | Library | 0.14.2 | Utility library for the Abyss ecosystem |
+| `abyss-scanner` | Tool | 0.4.5 | C++ Wayland protocol scanner for Abyss |
+| `abyssland-protocols` | Library | 0.7.0 | Wayland protocol extensions for Abyss |
+| `abyssparse` | Library | 0.6.8 | Configuration parsing library for Abyss |
+| `abysswire` | Library | 0.3.1 | IPC wire protocol library and scanner for Abyss |
+| `abyssgraphics` | Library | 0.5.1 | Graphics and resource library for Abyss |
+| `abyssal` | Library | 0.15.0 | Rendering and display backend library for Abyss |
+| `abysstoolkit` | Library | 0.6.0 | Native graphical toolkit and config preprocessor for Abyss |
+| `abysscursor` | Library | 0.1.13 | Cursor library and theme tools for Abyss |
+| `abyssland` | Compositor | 0.56.2 | Dynamic tiling Wayland compositor with C++ configuration |
+| `abyss-guiutils` | Application | 0.2.2 | Dialogs and application tools for Abyss |
+| `xdg-desktop-portal-abyss` | Desktop integration | 1.4.1 | Desktop portal and screen sharing picker for Abyss |
+| `abysspicker` | Application | 0.4.7 | Wayland color picker for Abyss |
+| `abyssdusk` | Application | 0.4.0 | Display color temperature manager for Abyss |
+| `abysspaper` | Application | 0.8.4 | Wallpaper manager for Abyss |
+| `abysslock` | Application | 0.9.6 | Wayland session lock for Abyss |
+| `abysspolkit` | Application | 0.2.0 | Polkit authentication agent for Abyss |
+
+Libraries (`abyssutils`, `abyssparse`, `abysswire`, `abyssgraphics`, `abyssal`, `abysstoolkit`, `abysscursor`) additionally ship `-devel` packages. The compositor compiles the public default config, never the packager's personal configuration; the pinned Glaze 7.2.0 archive is an explicit build source, not a network fallback.
+
+## ✅ Status
+
+Honest state as of 2026-10-17/18:
+
+- **Built natively:** all 17 primary packages built with official `xbps-src` on x86_64/glibc in an isolated buildroot. Exact artifact hashes: `BUILD-RESULTS.json`. `abyssparse-0.6.8.20261017_2` (license revision) was rebuilt and its `LICENSE`, `COPYING` and `COPYRIGHT` verified byte-for-byte in the package. A smoke build of `abyssland-protocols` was repeated on 2026-10-18 from the current templates and succeeded; templates match `sources.json` commits and hashes.
+- **Not tested:** installation on a real system, live desktop/session, authentication, other architectures, musl, signing, public binary hosting. Project test suites were disabled for the packaging build.
+- The upstream attribution audit remains a separate release prerequisite.
+
+## 🛠️ Maintainer tools
+
+<details>
+<summary>Regeneration, driver and checks</summary>
+
+`sources.json` pins the public archives and their hashes; `catalog.json` records dependencies and package names. All sources are checked against their digests by xbps-src.
+
+`python3 tools/generate.py` regenerates the recipes. To build all packages in dependency order (stops on the first failure, uses existing indexes via `-n`, so refresh the buildroot's indexes before a new batch):
 
 ```sh
 python3 tools/build.py /path/to/void-packages --logs out/logs --jobs 2
 ```
 
-The driver builds in dependency order and stops on the first failure. It uses
-the existing repository indexes (`-n`), so refresh the buildroot's indexes
-before a new build batch. Results and logs are written to `out/logs`.
-No host-system installation or repository signing is performed.
+No host installation or repository signing is performed.
 
-`python3 tools/generate.py` regenerates this repository's recipes. All sources
-are checked against their recorded digests by xbps-src. The pinned Glaze 7.2.0
-archive is an explicit compositor build source, not a build-time network fallback.
+</details>
 
-Maintainer: bb8TheRobot <bb8therobot85@gmail.com>.
-Packaging code: 0BSD. Upstream licenses and notices remain applicable, including
-Abyssparse's LGPL-3.0-only. The upstream attribution audit remains a separate
-release prerequisite.
+## 📄 License
 
-License scope and the retained upstream notices are described in [LICENSES.md](LICENSES.md).
+Maintainer: bb8TheRobot <bb8therobot85@gmail.com>. Packaging code: 0BSD. Upstream licenses and notices remain applicable, including Abyssparse's LGPL-3.0-only. See [LICENSES.md](LICENSES.md).
