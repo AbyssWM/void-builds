@@ -18,6 +18,17 @@ Third-party development templates, not part of Void's official repository. Packa
 
 ## 🚀 Installation
 
+### Prebuilt packages (recommended)
+
+```sh
+echo "repository=https://abysswm.github.io/void" | sudo tee /etc/xbps.d/abyss.conf
+sudo xbps-install -S abyssland
+```
+
+Signed binary repository: [AbyssWM/void](https://github.com/AbyssWM/void). On the first sync xbps asks to import the key of `bb8TheRobot <bb8therobot85@gmail.com>` — answer **y**.
+
+### Build it yourself
+
 **1. Get the official build system** and bootstrap it as an ordinary user:
 
 ```sh
