@@ -2,9 +2,9 @@
 # Template file for 'abysspolkit'
 # Pinned development snapshot; not an upstream release.
 pkgname=abysspolkit
-version=0.2.0.20261017
+version=0.2.0.20261027
 revision=1
-_commit=f121b36311c1d4cd1382fe29704d353d203a49a0
+_commit=b3a214b1948dcebd2f5f0f6cab2e6fdddf7cd486
 wrksrc="AbyssPolkit-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -17,7 +17,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/AbyssPolkit"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=f33d4b688692f37c7e1e8a0ef288e24d0d211ca73c69cc061ea20b489208db7f
+checksum=9802a003f2dec0fb8b73adedf2d770a548a20e46d416b77b884768a21e1195dd
 
 post_install() {
 	vlicense LICENSE

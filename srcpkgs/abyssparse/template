@@ -2,9 +2,9 @@
 # Template file for 'abyssparse'
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssparse
-version=0.6.8.20261017
+version=0.6.8.20261027
 revision=2
-_commit=45d399ec11762312395d62f1e66f6d3c4b53c482
+_commit=6c3c77e8a029e46d7416b84f67aff833f9beedd2
 wrksrc="Abyssparse-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="LGPL-3.0-only"
 homepage="https://github.com/AbyssWM/Abyssparse"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=b3b43a824e8a6112c7a62534536f712146ea27daea77ff6afe06179d536e47c4
+checksum=87ba448e0e84a56dd0785b7136b831e82c6895ddedad041a92cc7bad360db651
 
 post_install() {
 	vlicense LICENSE

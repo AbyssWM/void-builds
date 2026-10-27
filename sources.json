@@ -7,14 +7,15 @@
   "packages": [
     {
       "repo": "Abyssutils",
-      "commit": "b423270d43764d3b0f74584fa4a9c61ab1c9b9aa",
+      "commit": "f1f540b7121f6db3c0bb8518a072c1a79755cd82",
       "version": "0.14.2",
-      "url": "https://github.com/AbyssWM/Abyssutils/archive/b423270d43764d3b0f74584fa4a9c61ab1c9b9aa.tar.gz",
-      "filename": "Abyssutils-b423270d43764d3b0f74584fa4a9c61ab1c9b9aa.tar.gz",
-      "size": 80220,
-      "sha256": "42a8e2d5fbac0bb9c1837b94b22ce3d491e05159fb1f64258b25fe2fd106d02e",
-      "sha512": "439a03011e87f8f682b96f59a45c30a4d61d84c0fe9aa3103a815f525c052d8907e76a6f9ab31e37a229f284a2ba3eba3b6ef2fb9fc6fc70866a2393e71c75a7",
-      "blake2b": "c26f24f939bb1c492298f87edc6303b820e1212abc6369163fcec7e77e0029a9e97dea6fd5467494dc4f21d67b20d842ce350a2f72647827697f3560dbb46843"
+      "url": "https://github.com/AbyssWM/Abyssutils/archive/f1f540b7121f6db3c0bb8518a072c1a79755cd82.tar.gz",
+      "filename": "Abyssutils-f1f540b7121f6db3c0bb8518a072c1a79755cd82.tar.gz",
+      "size": 81693,
+      "sha256": "7a579a81abc1dce8ba65e14ffde83f15acd03aa4b07788c5d03a764cce2a7462",
+      "sha512": "25c074ae168b847527d3bf9e5fde0948f173b5c29c8729ebcf074a56a8f02e6a246d437fa8fa0471f35c4248abfc1b117dbe2e318be0577c2cbdfb7bc0685716",
+      "blake2b": "e2d478f470d2ed09848f0d9e721cb90fb3ecb38f8fff0063ac083d2ff48e971038fb35e459ae0be6b0a534ce73a26df232a901dcfad303a920d1db118318e393",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "Abyss-scanner",
@@ -40,14 +41,15 @@
     },
     {
       "repo": "Abyssparse",
-      "commit": "45d399ec11762312395d62f1e66f6d3c4b53c482",
+      "commit": "6c3c77e8a029e46d7416b84f67aff833f9beedd2",
       "version": "0.6.8",
-      "url": "https://github.com/AbyssWM/Abyssparse/archive/45d399ec11762312395d62f1e66f6d3c4b53c482.tar.gz",
-      "filename": "Abyssparse-45d399ec11762312395d62f1e66f6d3c4b53c482.tar.gz",
-      "size": 73214,
-      "sha256": "b3b43a824e8a6112c7a62534536f712146ea27daea77ff6afe06179d536e47c4",
-      "sha512": "faa76817c64a89d09d88ec6c162b7062af84641988725a615b5c72fd4b9b2c02b2a4c42eb458fa67ee62a856a701c1717cf0be68d6b67f8a96651a9fc49ce096",
-      "blake2b": "06cafefe4bcf10e148031a193c5888c1a8fc31d6267e70776e0305573e9f6a232379bf4442c1623d19800c50044215e2a1af69a9c1bcfe5b805f4b4678dd05fc"
+      "url": "https://github.com/AbyssWM/Abyssparse/archive/6c3c77e8a029e46d7416b84f67aff833f9beedd2.tar.gz",
+      "filename": "Abyssparse-6c3c77e8a029e46d7416b84f67aff833f9beedd2.tar.gz",
+      "size": 74723,
+      "sha256": "87ba448e0e84a56dd0785b7136b831e82c6895ddedad041a92cc7bad360db651",
+      "sha512": "1055323e4da46991a35649976031e27ba704c380defa5fa829547f413c6d461f978a44e57a19492d0e08b828f774dcc5cdad82d447c854f757852d5e85bb3b3d",
+      "blake2b": "04e0cf5d0ddaf23d7ece8b8366b17edc7d8d30938b4f516c79cd37074993d9744b9a60ba5af770033a836b0985180af7924fb2d9d9cec2d71124a466ffd75416",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "Abysswire",
@@ -62,14 +64,15 @@
     },
     {
       "repo": "Abyssgraphics",
-      "commit": "22ddc7596eefffcee611181a556ff1a753eaf433",
+      "commit": "5f590f21086f9c1fbb0ca1b0c1d7ffebdfb60945",
       "version": "0.5.1",
-      "url": "https://github.com/AbyssWM/Abyssgraphics/archive/22ddc7596eefffcee611181a556ff1a753eaf433.tar.gz",
-      "filename": "Abyssgraphics-22ddc7596eefffcee611181a556ff1a753eaf433.tar.gz",
-      "size": 458291,
-      "sha256": "b254c6ed189468c5408a910cce14c48d3f1105a3bcbe81af82052993e515c22b",
-      "sha512": "5319314c0fb96800d2c70585533da2bc90bf43e05245a4b5a44163bceba9bac8cd3316cd94b8e789f03112d001e1c70a4c5913e4bba6051bc01f04e7d00a15be",
-      "blake2b": "2962f3f95ba839c1f36c84db8bee048bed8ca1b27d035a500851c3e279e36db14be541fbb718d4f4a4540b8a36fe9962312b684258db3d7b8588a544dd00f522"
+      "url": "https://github.com/AbyssWM/Abyssgraphics/archive/5f590f21086f9c1fbb0ca1b0c1d7ffebdfb60945.tar.gz",
+      "filename": "Abyssgraphics-5f590f21086f9c1fbb0ca1b0c1d7ffebdfb60945.tar.gz",
+      "size": 460422,
+      "sha256": "5a191c008e3f2719fbd10633e48fa1b40bbf9742593b7f7e5e043c3a0972458d",
+      "sha512": "2596bf55f43c801d463ebb2f0fa2531bb965a0ab599237fc1eb22e6c67a2e2e37e1f954bcf25c3465a7df09a566484998683b1833c532d9b5163d63295b797f7",
+      "blake2b": "9971b298469c1d43af0914dcef2f58f50dfaf1bd21c49c0bb35e2eb34233dcd4f200fa5886a2c062bd3a58d65a76b4113794f3341a098b3a1870c13735cea2a7",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "Abyssal",
@@ -118,14 +121,15 @@
     },
     {
       "repo": "Abyss-guiutils",
-      "commit": "da6646906dab8557440ed8f5cca4157452105fc2",
+      "commit": "b25e0974ae580c63aa23252c4170eb7adf60f98d",
       "version": "0.2.2",
-      "url": "https://github.com/AbyssWM/Abyss-guiutils/archive/da6646906dab8557440ed8f5cca4157452105fc2.tar.gz",
-      "filename": "Abyss-guiutils-da6646906dab8557440ed8f5cca4157452105fc2.tar.gz",
-      "size": 16081,
-      "sha256": "f2eb180c298dc718b8e3b144c9f114a05e4e9aacd852d01864162dda65a06d48",
-      "sha512": "2bda8fdbe6ee861b50f5909bdc74f8d22e39d3c62996fbc1cfc2428c7da610dc735c2c0378d430590caf34d875bd478346093ee94b7109ad9058f78652ec8dd7",
-      "blake2b": "7d2b1ea30f35803b18a873fdf9f72b9f7cc56dd3c2e8f9cdfe34de8039f6c9731a56fb76a6e9e03ab45870d23c1d57e129662cfe74f897a450cc87658f12f40b"
+      "url": "https://github.com/AbyssWM/Abyss-guiutils/archive/b25e0974ae580c63aa23252c4170eb7adf60f98d.tar.gz",
+      "filename": "Abyss-guiutils-b25e0974ae580c63aa23252c4170eb7adf60f98d.tar.gz",
+      "size": 17002,
+      "sha256": "13382fa09aa13f7c1d17462f638937be5212e2c6ec99aab39aef647a191b5eba",
+      "sha512": "4fdff753068db446ef0059e215ea40c77292fb1f2b417bffbf9087678788bec15d4ff9dc026e6e3d81996dcd88f5a63c508f7f1f363e49ea12232deaee4f1530",
+      "blake2b": "de66212abcf4e29179eecb94aa56ffe7a961a578de6b30396f9e75decd8266224881f38a569e45052dfbee92aa9e26bed6b2013c5ace6f0182397328b1059194",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "Xdg-desktop-portal-abyss",
@@ -140,25 +144,27 @@
     },
     {
       "repo": "AbyssPicker",
-      "commit": "fa997857bfc513c240f8b442802dee64d15e1759",
+      "commit": "97240042de866686f1da1db3847ddd5f37603e27",
       "version": "0.4.7",
-      "url": "https://github.com/AbyssWM/AbyssPicker/archive/fa997857bfc513c240f8b442802dee64d15e1759.tar.gz",
-      "filename": "AbyssPicker-fa997857bfc513c240f8b442802dee64d15e1759.tar.gz",
-      "size": 27583,
-      "sha256": "18bc8ada83a3cd912140ae7f8bf825f55ffb6ee441b9ad0f267381222319955a",
-      "sha512": "bea50b38dbfe62b3e715e3d689c27dcc0d364b1e76fc7c73f9059acda6635a4f68930145670112704412edb550e42108c0ee369c915c338898bf97b66871d136",
-      "blake2b": "a4869877456917a5bf33ec828910a74d48ac15a76d4be4ccda995803f2a9fb9ffdc8a1660e418d0cf20b4824bbc576a2634c51be989b4565bdfc9a9c9d38479b"
+      "url": "https://github.com/AbyssWM/AbyssPicker/archive/97240042de866686f1da1db3847ddd5f37603e27.tar.gz",
+      "filename": "AbyssPicker-97240042de866686f1da1db3847ddd5f37603e27.tar.gz",
+      "size": 28491,
+      "sha256": "e20ff9b5596a8db82b9a979c633ee92f04f70c31b3f875bf8305a2c44322519f",
+      "sha512": "3d29a6400852eb7f4094388b485924b4ca1a3fb48d480fd9c4516babb4af4f37ed6f5b7ea1cb92113023a4bf7002ce953cf59ed09c6a7ac7f31060fd4949c667",
+      "blake2b": "d37176627915954d45dcfa5e81a91d172be71e61786336ccf958ee54b81acd1fefcf6faec60374757c3464c0631d2df0c333e54cfc1c2a907b438ce792130a28",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "AbyssDusk",
-      "commit": "01ad76f953f8d5139b5e03cd7cfaaf9342667f0b",
+      "commit": "6c58248dbd91d392fde18aa7764181b80b2da539",
       "version": "0.4.0",
-      "url": "https://github.com/AbyssWM/AbyssDusk/archive/01ad76f953f8d5139b5e03cd7cfaaf9342667f0b.tar.gz",
-      "filename": "AbyssDusk-01ad76f953f8d5139b5e03cd7cfaaf9342667f0b.tar.gz",
-      "size": 14334,
-      "sha256": "1870725946980001ea426c8723cfb7b3c0f2536673049a25a0762b8b59ef6b8c",
-      "sha512": "84c5052facd8fbdec28e5fb892da79afd50aa88e1a9a45d730671e61f50973db3e5359a08a54f170ea654e719f2b5403c1ebebb545fe70309a7861cb09d28dd8",
-      "blake2b": "6e26d537779613d04d3a2d932d2ca12e665b12effbe6a09c87e18676b55035954993e6bd9c434c51494c4b816cadd400da1e365c75a6e8125bc7a4ac3d8de53f"
+      "url": "https://github.com/AbyssWM/AbyssDusk/archive/6c58248dbd91d392fde18aa7764181b80b2da539.tar.gz",
+      "filename": "AbyssDusk-6c58248dbd91d392fde18aa7764181b80b2da539.tar.gz",
+      "size": 15399,
+      "sha256": "9cced56fb5bc428081dddb36293241fd9ef6d006aa5e63a34881742ebb9dc077",
+      "sha512": "bdcad43a6b2f9f47ffab427f1d5a6f07d3aef88b8e1aa6130bf285e62503ce3e898527e4deac6f9fa4e560143f098ba96701c5374749e26ac7a956e9548f3670",
+      "blake2b": "c34afb562cce07820e0416b8c1bceff7e73be87893aa0aad9dbdd94231c7be69f2b3e5da2dc3b45f89e6f002a899f62f9d65b92662b8a2cf573dab6de29bd862",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "AbyssPaper",
@@ -173,25 +179,27 @@
     },
     {
       "repo": "AbyssLock",
-      "commit": "651a5ecf43b742965bca25e99056cf8e7cf83aa3",
+      "commit": "ce1058c6dc4f994af77a9974cb5928ff0222bb2a",
       "version": "0.9.6",
-      "url": "https://github.com/AbyssWM/AbyssLock/archive/651a5ecf43b742965bca25e99056cf8e7cf83aa3.tar.gz",
-      "filename": "AbyssLock-651a5ecf43b742965bca25e99056cf8e7cf83aa3.tar.gz",
-      "size": 81969,
-      "sha256": "86e77468c4b4c4e598a5a933c16b7436fd3348e02bf0392400838f3c8097f926",
-      "sha512": "bad8764efbaa7fa3fca35ff92470fd57a03700842aa19a885d3d35329f24307809b55c50f6c94ad63d4c1588ba754525ee27f5d96f2da59c1ad5f520815f6a8b",
-      "blake2b": "04ddd6b5986fa44809dfc029263346235f7313cd7da411fbe283883221d077eeff7009084942e02b675697c8bdd70c74ba4d92a9b79cd4f02e1ca7d60360d346"
+      "url": "https://github.com/AbyssWM/AbyssLock/archive/ce1058c6dc4f994af77a9974cb5928ff0222bb2a.tar.gz",
+      "filename": "AbyssLock-ce1058c6dc4f994af77a9974cb5928ff0222bb2a.tar.gz",
+      "size": 83379,
+      "sha256": "6ac29dd099a1e20eed031da1adf6acd10b8f6ebe165bd6ff9027a1e19becd12b",
+      "sha512": "edc08a7842d0f81e723a3cfe0e186fa2c590da6b6430a2a2221ba018391469351868ee3fbaaa0c47c7838b3893b75da884004a8e8621ca6bdc4a27f17ce1b982",
+      "blake2b": "13d1f25164524aa828e69695825c145a25178587d6e1d5abd1eaf73abd027aeddea0420af43ccd0945b7b23419c5f19c61f639f9bb6fc59047c35e56e82aa663",
+      "snapshot_date": "20261027"
     },
     {
       "repo": "AbyssPolkit",
-      "commit": "f121b36311c1d4cd1382fe29704d353d203a49a0",
+      "commit": "b3a214b1948dcebd2f5f0f6cab2e6fdddf7cd486",
       "version": "0.2.0",
-      "url": "https://github.com/AbyssWM/AbyssPolkit/archive/f121b36311c1d4cd1382fe29704d353d203a49a0.tar.gz",
-      "filename": "AbyssPolkit-f121b36311c1d4cd1382fe29704d353d203a49a0.tar.gz",
-      "size": 107942,
-      "sha256": "f33d4b688692f37c7e1e8a0ef288e24d0d211ca73c69cc061ea20b489208db7f",
-      "sha512": "7ab4d2c8c95b86f0e981146987a78dc32f8d51489ad66f38a21276fe4312bd7165c6493318c494245fe50faf65a78eaf759e5bd47363d9d053fb9f1cffa3fe20",
-      "blake2b": "a0a37b65d022f8aadcdf8fa076614716e2955b4948f09b5bafcb63056bf9e212c7aa32f8f62eb6b01d844acaa89d13bfc6272a6f0ccf4d2e4fc5726ecd037267"
+      "url": "https://github.com/AbyssWM/AbyssPolkit/archive/b3a214b1948dcebd2f5f0f6cab2e6fdddf7cd486.tar.gz",
+      "filename": "AbyssPolkit-b3a214b1948dcebd2f5f0f6cab2e6fdddf7cd486.tar.gz",
+      "size": 109485,
+      "sha256": "9802a003f2dec0fb8b73adedf2d770a548a20e46d416b77b884768a21e1195dd",
+      "sha512": "1ad2b61efb7a9b63123e7b7a9bab379370667cb2f628b9688c864716ce89061826a8e9fe8216094e7cbbdafc58d5884accf3a485b6db115a01fd33aa7308f7b5",
+      "blake2b": "42cdb41e69831cb1be52e32361657d243ea874374db37dba4ad71238be62609b7924f1ecdd507366aee25fb25c9dc73a7ace3b2ee53da84da53da7831846260f",
+      "snapshot_date": "20261027"
     }
   ],
   "extras": {

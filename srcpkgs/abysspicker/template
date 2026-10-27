@@ -2,9 +2,9 @@
 # Template file for 'abysspicker'
 # Pinned development snapshot; not an upstream release.
 pkgname=abysspicker
-version=0.4.7.20261017
+version=0.4.7.20261027
 revision=1
-_commit=fa997857bfc513c240f8b442802dee64d15e1759
+_commit=97240042de866686f1da1db3847ddd5f37603e27
 wrksrc="AbyssPicker-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/AbyssPicker"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=18bc8ada83a3cd912140ae7f8bf825f55ffb6ee441b9ad0f267381222319955a
+checksum=e20ff9b5596a8db82b9a979c633ee92f04f70c31b3f875bf8305a2c44322519f
 
 post_install() {
 	vlicense LICENSE

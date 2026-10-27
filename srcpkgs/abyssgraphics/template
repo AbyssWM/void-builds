@@ -2,9 +2,9 @@
 # Template file for 'abyssgraphics'
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssgraphics
-version=0.5.1.20261017
+version=0.5.1.20261027
 revision=1
-_commit=22ddc7596eefffcee611181a556ff1a753eaf433
+_commit=5f590f21086f9c1fbb0ca1b0c1d7ffebdfb60945
 wrksrc="Abyssgraphics-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/Abyssgraphics"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=b254c6ed189468c5408a910cce14c48d3f1105a3bcbe81af82052993e515c22b
+checksum=5a191c008e3f2719fbd10633e48fa1b40bbf9742593b7f7e5e043c3a0972458d
 
 post_install() {
 	vlicense LICENSE

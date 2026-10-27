@@ -606,9 +606,6 @@
       ],
       "build_internal": [
         "abyss-scanner"
-      ],
-      "patches": [
-        "0001-install-pam-in-sysconfdir.patch"
       ]
     },
     "AbyssPolkit": {

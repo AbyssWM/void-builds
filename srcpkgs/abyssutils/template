@@ -2,9 +2,9 @@
 # Template file for 'abyssutils'
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssutils
-version=0.14.2.20261017
+version=0.14.2.20261027
 revision=1
-_commit=b423270d43764d3b0f74584fa4a9c61ab1c9b9aa
+_commit=f1f540b7121f6db3c0bb8518a072c1a79755cd82
 wrksrc="Abyssutils-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/Abyssutils"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=42a8e2d5fbac0bb9c1837b94b22ce3d491e05159fb1f64258b25fe2fd106d02e
+checksum=7a579a81abc1dce8ba65e14ffde83f15acd03aa4b07788c5d03a764cce2a7462
 
 post_install() {
 	vlicense LICENSE

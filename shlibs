@@ -1,7 +1,7 @@
-libabyssutils.so.13 abyssutils-0.14.2.20261017_1
-libabyssparse.so.2 abyssparse-0.6.8.20261017_1
+libabyssutils.so.13 abyssutils-0.14.2.20261027_1
+libabyssparse.so.2 abyssparse-0.6.8.20261027_1
 libabysswire.so.3 abysswire-0.3.1.20261017_1
-libabyssgraphics.so.4 abyssgraphics-0.5.1.20261017_1
+libabyssgraphics.so.4 abyssgraphics-0.5.1.20261027_1
 libabyssal.so.14 abyssal-0.15.0.20261017_1
 libabysstoolkit.so.6 abysstoolkit-0.6.0.20261017_1
 libabysscursor.so.0 abysscursor-0.1.13.20261017_1
