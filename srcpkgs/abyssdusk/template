@@ -4,7 +4,7 @@
 pkgname=abyssdusk
 version=0.4.0.20261027
 revision=1
-_commit=6c58248dbd91d392fde18aa7764181b80b2da539
+_commit=b383b3706c40b8b6c0c76ec359ca4b89652f9b46
 wrksrc="AbyssDusk-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/AbyssDusk"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=9cced56fb5bc428081dddb36293241fd9ef6d006aa5e63a34881742ebb9dc077
+checksum=7cabb12e3d8eb24cad418a17b1e498f18a9e501066426131ad3a698c6608019a
 
 post_install() {
 	vlicense LICENSE

@@ -4,7 +4,7 @@
 pkgname=abysspicker
 version=0.4.7.20261027
 revision=1
-_commit=97240042de866686f1da1db3847ddd5f37603e27
+_commit=6a4a1ccf9de9b8c9a803f75e6e4829e907a08568
 wrksrc="AbyssPicker-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,7 +16,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/AbyssPicker"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=e20ff9b5596a8db82b9a979c633ee92f04f70c31b3f875bf8305a2c44322519f
+checksum=9fa5bd0c913e4cfff6e1e1b7d2d0161afb4c0310e77df161b9a9e4fd3db6bba2
 
 post_install() {
 	vlicense LICENSE

@@ -4,7 +4,7 @@
 pkgname=abysspolkit
 version=0.2.0.20261027
 revision=1
-_commit=b3a214b1948dcebd2f5f0f6cab2e6fdddf7cd486
+_commit=d9bc965683bb4b0b90d6039b22fbd39423a37c86
 wrksrc="AbyssPolkit-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -17,7 +17,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/AbyssPolkit"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=9802a003f2dec0fb8b73adedf2d770a548a20e46d416b77b884768a21e1195dd
+checksum=a5e5d65028067d7b57faa44b82a026cd371009d054cf5fde91751a1e4faaedeb
 
 post_install() {
 	vlicense LICENSE

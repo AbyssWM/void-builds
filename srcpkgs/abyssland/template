@@ -2,9 +2,9 @@
 # Template file for 'abyssland'
 # Pinned development snapshot; not an upstream release.
 pkgname=abyssland
-version=0.56.2.20261021
+version=0.56.2.20261027
 revision=2
-_commit=0a0a351469da7f8281094e1d4f7abe96e2dcda39
+_commit=48e08203f190276fd4e66c18c4e201f683978c12
 wrksrc="Abyssland-${_commit}"
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -21,7 +21,7 @@ maintainer="bb8TheRobot <bb8therobot85@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/AbyssWM/Abyssland"
 distfiles="${homepage}/archive/${_commit}.tar.gz"
-checksum=2c238186e2121fe870447143a1ac77a534bffc35db7ffa2d6f950480c9a78eb1
+checksum=bd937260c900b4e11273f388695e1ae908758170a8f5df2945c71c0b0dcf3906
 wrksrc="${pkgname}-${version}"
 build_wrksrc="Abyssland-${_commit}"
 distfiles+=" https://github.com/stephenberry/glaze/archive/refs/tags/v7.2.0.tar.gz>glaze-7.2.0.tar.gz"
